@@ -25,7 +25,7 @@ $(document).ready(function() {
 							'<div class="profile_div">'+
 								'<div class="row">'+
 									'<div class="col-hgt">'+
-										'<img src="'+stat+'" class="img-circle img-profile">'+
+										'<img src="../img/AuthenticatorResponse.png" class="img-circle img-profile">'+
 									'</div><!--col-hgt end-->'+
 									'<div class="col-hgt">'+
 										'<div class="chat-txt">'+
