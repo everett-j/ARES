@@ -17,6 +17,5 @@ from django.conf.urls import url, include	# added an import!
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^', include('apps.chatter_box.urls', namespace='ares')),
+    url(r'^', include('apps.chatter_box.urls')),
 ]

@@ -1,12 +1,12 @@
 $(document).ready(function() {
-
+	var stat = "{% static 'chatter_box/img/ares.png' %}"
 
 
 	//---------------------------------- Add dynamic html bot content(Widget style) ----------------------------
 	// You can also add the html content in html page and still it will work!
 	var mybot = '<div class="chatCont" id="chatCont">'+
 								'<div class="bot_profile">'+
-									'<img src="assets/img/ares.png" class="bot_p_img">'+
+									'<img src="'+stat+'" class="bot_p_img">'+
 									'<div class="close">'+
 										'<i class="fa fa-times" aria-hidden="true"></i>'+
 									'</div>'+
@@ -25,7 +25,7 @@ $(document).ready(function() {
 							'<div class="profile_div">'+
 								'<div class="row">'+
 									'<div class="col-hgt">'+
-										'<img src="assets/img/ares.png" class="img-circle img-profile">'+
+										'<img src="'+stat+'" class="img-circle img-profile">'+
 									'</div><!--col-hgt end-->'+
 									'<div class="col-hgt">'+
 										'<div class="chat-txt">'+
