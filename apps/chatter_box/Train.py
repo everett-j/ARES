@@ -20,6 +20,8 @@ chb.train(["What up?", "The sky. What can I do for you today?"])
 chb.train(["Hey there.", "Hello, what can I do for you today?"])
 chb.train(["what up", "The sky. What can I do for you today?"])
 chb.train(["hey there", "Hello, what can I do for you today?"])
+chb.train(["Hi.", "Hello, what can I do for you today?"])
+chb.train(["hi", "Hello, what can I do for you today?"])
 
 ########################    GENERAL INFORMATION     ########################
 chb.train(["What can you do for me?", "I can give you information about me, my creators, a joke, local traffic, or local weather."])
