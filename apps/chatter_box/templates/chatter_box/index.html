@@ -283,7 +283,7 @@ $(document).ready(function() {
 				url: test,
 				method: 'get',
 				success: function (response){
-					var UserResponse = '<p class="userEnteredText">'+response+'</p><div class="clearfix"></div>';
+					var UserResponse = '<p class="botResult">'+response+'</p><div class="clearfix"></div>';
 					$(UserResponse).appendTo('#result_div');
 					scrollToBottomOfResults();
 				},
