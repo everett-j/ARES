@@ -1,0 +1,102 @@
+<!--BEGIN DYNAMIC DIV-->
+               <!--ARES CARD-->
+               <div id="ares_card" class="collapse.show card mb-3 " style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="{% static 'chatter_box/img/ares.png' %}" alt="ARES">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="large_text">A.R.E.S.</p>
+                        <p id='small_text' class="card-text small">A Rather Extraordinary System</p>
+                        <p id='small_text' class="card-text"><small class="text-muted">born in Bellevue, WA</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--END ARES CARD-->
+        <!--TIM CARD-->
+        <div id="tim_card" class="collapse card mb-3 " style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="..." class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Tim Rogers</h5>
+                  <p id='small_text' class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p id='smaller_text' class="card-text"><small class="text-muted">Bellevue, WA</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END TIM CARD-->
+                  <!--Josh CARD-->
+        <div id="josh_card" class="collapse card mb-3 " style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="..." class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Josh </h5>
+                  <p id='small_text' class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                  <p id='smaller_text' class="card-text"><small class="text-muted">Bellevue, WA</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+		  <!--END Josh CARD-->
+		  <!--Josh E CARD-->
+		  <div id="joshe_card" class="collapse card mb-3 " style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+				
+				<img src="{% static 'chatter_box/img/josh-everett.jpg' %}" class="card-img" alt="Josh Everett">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Josh Everett</h5>
+                  <p id='small_text' class="card-text small">Well-versed in Python, Angular, JavaScript, MongoDB, Django and MySQL. Military veteran with
+					strong ability to manage projects from concept to completion ensuring on-time, on-budget, and on-
+					target results. Equally adept at working with teams and individually with minimal supervision.</p>
+                  <p id='small_text' class="card-text"><a href="http://www.josheverett.info">JoshEverett.info</a></p>
+                  <p id='small_text' class="card-text"><small class="text-muted">Lexington Park, MD</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END Josh E CARD-->
+                  <!--Traffic CARD-->
+        <div id="traffic_card" class="collapse card mb-3 " style="max-width: 540px;">
+            <div class="row no-gutters">
+              
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Local Traffic</h5>
+				  
+				  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d86096.20390980966!2d-122.1815943!3d47.5968427!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1569438509338!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+                    </div>
+              </div>
+            </div>
+          </div>
+          <!--END Traffic CARD-->
+                            <!--Weather CARD-->
+        <div id="weather_card" class="collapse card mb-3 " style="max-width: 540px;">
+            <div class="row no-gutters">
+             
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Local Weather</h5>
+                  
+				  <a class="weatherwidget-io" href="https://forecast7.com/en/47d61n122d20/bellevue/?unit=us" data-label_1="BELLEVUE" data-label_2="WEATHER" data-theme="pure" >BELLEVUE WEATHER</a>
+				  <script>
+				  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+				  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END Weather CARD-->
