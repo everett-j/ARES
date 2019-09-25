@@ -8,6 +8,10 @@ from json_response import JsonResponse
 
 
 
+
+ 
+
+
     
 def index(request):
     return render(request, 'chatter_box/index.html')

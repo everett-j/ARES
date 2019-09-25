@@ -117,7 +117,7 @@ mybot .chatCont {
   position: fixed;
   width: 400px;
   height: 400px !important;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #7d7a7a;
   bottom: 65px;
   right: 0;
   background: #D8D4D6 ;
@@ -257,7 +257,7 @@ mybot .col-hgt {
 }
 
 mybot .chat-txt {
-  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.16),0 0px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.16),0 0px 10px 0 rgba(0,0,0,1.12);
   padding: 15px 15px;
   border-radius: 50px;
   font-size: 12px;

@@ -4,5 +4,6 @@ from . import views
 urlpatterns = [
     url(r'^$', views.index),
     url(r'^chatter$', views.chatter),
+
     url(r'^send/(?P<text>\w+)$', views.send_text),
 ]
