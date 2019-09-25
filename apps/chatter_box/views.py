@@ -24,10 +24,17 @@ def chatter(request):
     return render(request, 'chatter_box/index.html')
 
 
-def send_text( request, text):
+def send_text(request, text):
     chatbot = ChatBot('Ares', trainer='chatterbot.trainers.ListTrainer')
     # response = chatbot.get_response("Bot info.")
     # print(response)
-    response = chatbot.get_response(text = text)
+    text = text.split("asdfghjkl")
+    text = " ".join(text)
+    response = chatbot.get_response(text)
+    context={
+        "text":"test",
+        "response": response
+    }
+
     print(response)
-    return redirect("/")
+    return render(request, "chatter_box/chatterbot.html", context)
