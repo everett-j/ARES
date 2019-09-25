@@ -4,7 +4,7 @@ from django.contrib import messages
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer, ListTrainer
 from django.http import JsonResponse
-from json_response import JsonResponse
+# from json_response import JsonResponse
 
 
 
