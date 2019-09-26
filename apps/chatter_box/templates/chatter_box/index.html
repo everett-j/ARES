@@ -454,10 +454,21 @@ $(document).ready(function() {
 					} else if(response.includes("Generating my information")){
 						$("#weather_card").hide()
 						$("#MainContainer").html(
-						'<div id="joshe_card" class="card mb-3 " style="max-width: 540px;">'+
+						'<div id="ares_b_card" class="card mb-3 " style="max-width: 540px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="col-md-4">'+
 								`<img src="{% static 'chatter_box/img/motion.gif' %}" class="card-img" alt="brain">`+
+								'</div>'+
+								
+							'</div>'+
+						'</div>')
+					} else if(response.includes("Shutdown")){
+						$("#weather_card").hide()
+						$("#MainContainer").html(
+						'<div id="shutdown_card" class="card mb-3 " style="max-width: 975px;">'+
+							'<div class="row no-gutters">'+
+								'<div class="col-md-4">'+
+								`<img src="{% static 'chatter_box/img/shutdown.gif' %}" class="card-img" alt="shutdown">`+
 								'</div>'+
 								
 							'</div>'+

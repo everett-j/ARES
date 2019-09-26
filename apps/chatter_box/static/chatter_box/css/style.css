@@ -44,6 +44,11 @@ a:focus {
 
 }
 
+#shutdown_card img{
+  width: 966px;
+
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
