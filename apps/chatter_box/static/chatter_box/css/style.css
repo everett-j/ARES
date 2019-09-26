@@ -419,10 +419,7 @@ mybot .suggestion span:last-child {
   }
 }
 .aresMain:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
-
-  /* When the animation is finished, start again */
   animation-iteration-count: infinite;
 }
 
@@ -439,5 +436,36 @@ mybot .suggestion span:last-child {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+
+.botResult {
+  opacity: 0;
+  -moz-animation: cssAnimation 3s;
+  /* Firefox */
+  -webkit-animation: cssAnimation 3s;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 3s;
+  /* Opera */
+  animation: cssAnimation 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  99% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  99% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 
 /* MyBot end */

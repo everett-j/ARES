@@ -274,9 +274,13 @@ $(document).ready(function() {
 				e.preventDefault();
 				return false;
 			} else {
-				$("#chat-input").blur();
+				// setTimeout( function() { $("chat-input").focus(); }, 500 );
+				// .focus('#chat-input')
+				// $("#chat-input").blur();
+				showSpinner();
+				document.getElementById("chat-input").focus();
 				setUserResponse(text);
-				console.log(text);   // WORKS HERE!
+				console.log(text);
 				var ctext = text;
 				text = text.split(",").join("").split("'").join("").split(".").join("").split(" ").join("asdfghjkl")
 				var test = "send/"+text
@@ -297,6 +301,7 @@ $(document).ready(function() {
 				e.preventDefault();
 				return false;
 			}
+			
 		}
 	});
 
@@ -364,7 +369,7 @@ $(document).ready(function() {
 				$(BotResponse).appendTo('#result_div');
 			}
 			scrollToBottomOfResults();
-			hideSpinner();
+			// hideSpinner();
 		}, 500);
 	}
 
@@ -389,7 +394,7 @@ $(document).ready(function() {
 
 	//---------------------------------------- Ascii Spinner ---------------------------------------------------
 	function showSpinner() {
-		$('.spinner').show();
+		$('.spinner').show(3050, 'linear',  function() {hideSpinner()});
 	}
 	function hideSpinner() {
 		$('.spinner').hide();
