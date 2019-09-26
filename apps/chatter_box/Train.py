@@ -105,6 +105,16 @@ chb.train(["whos josh richardson", "Generating Josh Richardson's information... 
 chb.train(["Josh Richardson.", "Generating Josh Richardson's information... What else can I do for you?"])
 chb.train(["josh richardson", "Generating Josh Richardson's information... What else can I do for you?"])
 
+########################    George information      ########################
+chb.train(["Give me information on George.", "Generating George's information... What else can I do for you?"])
+chb.train(["give me information on george", "Generating George's information... What else can I do for you?"])
+chb.train(["Show me George.", "Generating George's information... What else can I do for you?"])
+chb.train(["show me george", "Generating George's information... What else can I do for you?"])
+chb.train(["Who's George?", "Generating George's information... What else can I do for you?"])
+chb.train(["whos george", "Generating George's information... What else can I do for you?"])
+chb.train(["George.", "Generating George's information... What else can I do for you?"])
+chb.train(["george", "Generating George's information... What else can I do for you?"])
+
 ########################    Bot information         ########################
 chb.train(["Give me information about yourself.", "Generating my information... What else can I do for you?"])
 chb.train(["give me information about yourself", "Generating my information... What else can I do for you?"])

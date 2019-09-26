@@ -545,20 +545,19 @@ $(document).ready(function() {
 						$("#MainContainer")
 						.delay(3000)
 						.queue(function(n){
+						$("#shut").html("")
 								$(this)
 						.html(
-						'<div id="joshe_card" class="card mb-3 " style="max-width: 540px;">'+
+						'<div class="card mb-3 " style="max-width: 540px;">'+
 							'<div class="row no-gutters">'+
-								'<div class="col-md-4">'+
-								`<img src="{% static 'chatter_box/img/george3.gif' %}" class="card-img" alt="George">`+
+								'<div class="d-inline-block">'+
+									`<img src="{% static 'chatter_box/img/george3.gif' %}" class="card-img" alt="George" style="border-radius:100px;height:200px;width:250px;">`+
 								'</div>'+
-								'<div class="col-md-8">'+
+								'<div class="d-inline-block">'+
 									'<div class="card-body">'+
-										'<h5 class="card-title">oh George...</h5>'+
+										'<h5 class="card-title"><br>oh George...</h5>'+
 										'<p id="medium_text" class="card-text small">USERNAME: BALLA</p>'+
 										'<p id="medium_text" class="card-text small">C.O.D. is NOT for YOU</p>'+
-										
-										
 									'</div>'+
 								'</div>'+
 							'</div>'+
