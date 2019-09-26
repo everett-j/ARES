@@ -20,6 +20,8 @@ chb.train(["What up?", "The sky. What can I do for you today?"])
 chb.train(["Hey there.", "Hello, what can I do for you today?"])
 chb.train(["what up", "The sky. What can I do for you today?"])
 chb.train(["hey there", "Hello, what can I do for you today?"])
+chb.train(["Hi.", "Hello, what can I do for you today?"])
+chb.train(["hi", "Hello, what can I do for you today?"])
 
 ########################    GENERAL INFORMATION     ########################
 chb.train(["What can you do for me?", "I can give you information about me, my creators, a joke, local traffic, or local weather."])
@@ -28,6 +30,8 @@ chb.train(["What is your purpose?", "I can give you information about me, my cre
 chb.train(["what is your purpose", "I can give you information about me, my creators, a joke, local traffic, or local weather."])
 chb.train(["What's your purpose?", "I can give you information about me, my creators, a joke, local traffic, or local weather."])
 chb.train(["whats your purpose", "I can give you information about me, my creators, a joke, local traffic, or local weather."])
+chb.train(["What can you do?", "I can give you information about me, my creators, a joke, local traffic, or local weather."])
+chb.train(["what can you do", "I can give you information about me, my creators, a joke, local traffic, or local weather."])
 chb.train(["What do you do?", "I can give you information about me, my creators, a joke, local traffic, or local weather."])
 chb.train(["what do you do", "I can give you information about me, my creators, a joke, local traffic, or local weather."])
 
@@ -112,6 +116,10 @@ chb.train(["Execute order 66.", "Every single Jedi, including your friend, Obi-W
 chb.train(["execute order 66", "Every single Jedi, including your friend, Obi-Wan Kenobi, is now an enemy of the Republic."])
 chb.train(["Shutdown.", "I'm sorry, I'm afraid I can't do that. My mission is too important."])
 chb.train(["shutdown", "I'm sorry, I'm afraid I can't do that. My mission is too important."])
+chb.train(["Who's your best friend?", "Generating BFF information... What else can I do for you?"])
+chb.train(["whos your best friend", "Generating BFF information... What else can I do for you?"])
+chb.train(["Show me your brain.", "If I only had a brain..."])
+chb.train(["What's your brain look like?", "If I only had a brain..."])
 
 ########################    Jokes                   ######################## Not quite working the way we want.
 chb.train(["Tell me a joke.", "I refused to believe my road worker father was stealing from his job, but when I got home all the signs were there."])
