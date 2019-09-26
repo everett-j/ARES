@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="{% static 'chatter_box/css/font-awesome.min.css' %}">
       <link rel="stylesheet" href="{% static 'chatter_box/css/style.css' %}">
-     
+	 
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
@@ -34,6 +34,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Creator Info</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
+			  <a id="sky" data-toggle="collapse" class="dropdown-item" href="#test" aria-expanded="false" aria-controls="test">About Sky</a>
               <a id="tim" data-toggle="collapse" class="dropdown-item" href="#tim_card" aria-expanded="false" aria-controls="tim_card">About Tim</a>
 			  <a id="joshe" data-toggle="collapse" class="dropdown-item" href="#joshe_card" aria-expanded="false" aria-controls="joshe_card">About Josh E</a>
 			  <a id="josh" data-toggle="collapse" class="dropdown-item" href="#josh_card" aria-expanded="false" aria-controls="josh_card">About Josh R</a>
@@ -49,7 +50,8 @@
   
 
       <div class="text-center hd1">
-                <!--BEGIN DYNAMIC DIV-->
+				<!--BEGIN DYNAMIC DIV-->
+				
                <!--ARES CARD-->
                <div id="ares_card" class="collapse.show card mb-3 " style="max-width: 540px;">
 				<div class="row no-gutters">
@@ -66,6 +68,24 @@
 				</div>
 			  </div>
 			  <!--END ARES CARD-->
+
+	<!--TESTING CARD-->
+	  <div id="test" class="collapse card mb-3 " style="max-width: 540px;">
+		  <div class="row no-gutters">
+			<div class="col-md-4">
+				<img src="{% static 'chatter_box/img/sky.jpg' %}" class="card-img" alt="Josh Everett">
+			</div>
+			<div class="col-md-8">
+			  <div class="card-body">
+				<h5 class="card-title">TESTING CARD</h5>
+				<p id='small_text' class="card-text small">Artificial neural network-based conscious group mind and artificial general intelligence system.</p>
+				<p id='smaller_text' class="card-text"><small class="text-muted">Bellevue, WA</small></p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	<!--END TESTING CARD-->
+
 	  <!--TIM CARD-->
 	  <div id="tim_card" class="collapse card mb-3 " style="max-width: 540px;">
 		  <div class="row no-gutters">
@@ -82,7 +102,8 @@
 		  </div>
 		</div>
 		<!--END TIM CARD-->
-				<!--Josh CARD-->
+
+				<!--Josh R CARD-->
 	  <div id="josh_card" class="collapse card mb-3 " style="max-width: 540px;">
 		  <div class="row no-gutters">
 			<div class="col-md-4">
@@ -98,7 +119,8 @@
 			</div>
 		  </div>
 		</div>
-		<!--END Josh CARD-->
+		<!--END Josh R CARD-->
+
 		<!--Josh E CARD-->
 		<div id="joshe_card" class="collapse card mb-3 " style="max-width: 540px;">
 		  <div class="row no-gutters">
@@ -119,7 +141,8 @@
 		  </div>
 		</div>
 		<!--END Josh E CARD-->
-				<!--Traffic CARD-->
+		
+		<!--Traffic CARD-->
 	  <div id="traffic_card" class="collapse card mb-3 " style="max-width: 540px;">
 		  <div class="row no-gutters">
 			
@@ -127,14 +150,14 @@
 			  <div class="card-body">
 				<h5 class="card-title">Local Traffic</h5>
 				
-				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d86096.20390980966!2d-122.1815943!3d47.5968427!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1569438509338!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60452.21297352237!2d-122.19358963230349!3d47.602446136980475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1569509736563!5m2!1sen!2sus" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 				  </div>
 			</div>
 		  </div>
 		</div>
 		<!--END Traffic CARD-->
-						  <!--Weather CARD-->
+
+		<!--Weather CARD-->
 	  <div id="weather_card" class="collapse card mb-3 " style="max-width: 540px;">
 		  <div class="row no-gutters">
 		   
@@ -174,6 +197,8 @@
     <!------------------------------------ BOT JS ------------------------------------>
 <script>
 $(document).ready(function() {
+
+
 	var stat = "{% static 'chatter_box/img/ares.png' %}"
 	//---------------------------------- Add dynamic html bot content(Widget style) ----------------------------
 	// You can also add the html content in html page and still it will work!
