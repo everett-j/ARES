@@ -414,7 +414,7 @@ mybot .suggestion span:last-child {
 .medium_text{
   font-size: 22px;
   font-weight: bold;
-
+}
 
 @media screen and (max-width: 500px) {
   mybot .resultDiv .userEnteredText,
@@ -457,13 +457,13 @@ mybot .suggestion span:last-child {
 
 .botResult {
   opacity: 0;
-  -moz-animation: cssAnimation 3s;
+  -moz-animation: cssAnimation s;
   /* Firefox */
-  -webkit-animation: cssAnimation 3s;
+  -webkit-animation: cssAnimation s;
   /* Safari and Chrome */
-  -o-animation: cssAnimation 3s;
+  -o-animation: cssAnimation s;
   /* Opera */
-  animation: cssAnimation 3s;
+  animation: cssAnimation s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }

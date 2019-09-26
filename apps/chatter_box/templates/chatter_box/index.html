@@ -72,7 +72,9 @@
 						   
 							<div class="card-body">
 							  <p class="medium_text">What I can do for you:</p>
-							  <p id='small_text' class="card-text small">You can ask me for traffic, weather and even info about my creators. I am still young and learning new things.</p>
+							  <p id='small_text' class="card-text small">You can ask me for traffic, weather and even info about my creators.
+							  <br>
+							  I am still young and learning new things.</p>
 							  <img class="aresMain2"src="{% static 'chatter_box/img/arrow.png' %}" alt="right">
 							</div>
 						
@@ -289,7 +291,7 @@ $(document).ready(function() {
 					if(response.includes("Generating traffic map")){
 						$("#weather_card").hide()
 						$("#MainContainer")
-						.delay(4500)
+						.delay(3000)
 						.queue(function(n){
 							$(this)
 						.html(
@@ -309,17 +311,18 @@ $(document).ready(function() {
 						
 					} else if(response.includes("Generating weather map")){
 						$("#MainContainer")
-							.delay(4500)
+							.delay(3000)
 							.queue(function(n){
 								$(this)
 								.html("")
 								n();
+								$("#weather_card").show()
 							})
-						$("#weather_card").show()
+
 					} else if(response.includes("Generating creator information")){
 						$("#weather_card").hide()
 						$("#MainContainer")
-							.delay(4500)
+							.delay(3000)
 							.queue(function(n){
 								$(this)
 								.html(
@@ -375,7 +378,7 @@ $(document).ready(function() {
 					} else if(response.includes("Generating Tim&#39;s information")){
 						$("#weather_card").hide()
 						$("#MainContainer")
-						.delay(4500)
+						.delay(3000)
 						.queue(function(n){
 								$(this)
 						.html(
@@ -399,7 +402,7 @@ $(document).ready(function() {
 
 						$("#weather_card").hide()
 						$("#MainContainer")
-							.delay(4500)
+							.delay(3000)
 							.queue(function(n){
 								$(this)
 							.html(
@@ -422,7 +425,7 @@ $(document).ready(function() {
 					} else if(response.includes("Generating Josh Everett")){
 						$("#weather_card").hide()
 						$("#MainContainer")
-						.delay(4500)
+						.delay(3000)
 						.queue(function(n){
 								$(this)
 						.html(
@@ -448,7 +451,7 @@ $(document).ready(function() {
 					} else if(response.includes("Generating my information")){
 						$("#weather_card").hide()
 						$("#MainContainer")
-						.delay(4500)
+						.delay(3000)
 						.queue(function(n){
 								$(this)
 						.html(
@@ -479,7 +482,11 @@ $(document).ready(function() {
 
 					} else if(response.includes("Generating BFF information")){
 						$("#weather_card").hide()
-						$("#MainContainer").html(
+						$("#MainContainer")
+						.delay(3000)
+						.queue(function(n){
+								$(this)
+						.html(
 						'<div id="joshe_card" class="card mb-3 " style="max-width: 540px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="col-md-4">'+
@@ -495,9 +502,15 @@ $(document).ready(function() {
 								'</div>'+
 							'</div>'+
 						'</div>')
+						n();
+						})
 					} else if(response.includes("Generating my information")){
 						$("#weather_card").hide()
-						$("#MainContainer").html(
+						$("#MainContainer")
+						.delay(3000)
+						.queue(function(n){
+								$(this)
+						.html(
 						'<div id="ares_b_card" class="card mb-3 " style="max-width: 540px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="col-md-4">'+
@@ -506,9 +519,15 @@ $(document).ready(function() {
 								
 							'</div>'+
 						'</div>')
+						n();
+						})
 					} else if(response.includes("My mission is too important")){
 						$("#weather_card").hide()
-						$("#MainContainer").html("")
+						$("#MainContainer")
+						.delay(250)
+						.queue(function(n){
+								$(this)
+						.html("")
 						$("#shut").html(
 						'<div id="shutdown_card" class="card mb-3">'+
 							'<div class="row no-gutters">'+
@@ -518,7 +537,8 @@ $(document).ready(function() {
 								
 							'</div>'+
 						'</div>')
-										
+						n();
+						})					
 					}
 					scrollToBottomOfResults();
 				},
@@ -613,11 +633,9 @@ $(document).ready(function() {
 	//---------------------------------------- Ascii Spinner ---------------------------------------------------
 	function showSpinner() {
 		// $('.spinner').show(function() {hideSpinner()});
-		$('.spinner').show(100).delay(3100).hide(500);
+		$('.spinner').show(50).delay(975).hide(500);
 	}
-	function hideSpinner() {
-		$('.spinner').hide();
-	}
+
 	//------------------------------------------- Suggestions --------------------------------------------------
 	function addSuggestion(textToAdd) {
 		setTimeout(function() {
