@@ -7,7 +7,6 @@ from django.http import JsonResponse
 # from json_response import JsonResponse
 
 
-
     
 def index(request):
     return render(request, 'chatter_box/index.html')
@@ -34,7 +33,10 @@ def send_text(request, text):
     context={
         "response": response,
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> bc0a298ac044d921223ac443bdde9cbd4ac808f4
     print(response)
     return render(request, "chatter_box/chatterbot.html", context)
