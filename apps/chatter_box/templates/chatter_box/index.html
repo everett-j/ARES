@@ -273,16 +273,8 @@ $(document).ready(function() {
 					$(UserResponse).appendTo('#result_div');
 					console.log(response)
 					if(response.includes("Generating traffic map")){
-<<<<<<< HEAD
-						$("#MainContainer")
-							.delay(4500)
-							.queue(function(n){
-								$(this)
-							.html(
-=======
 						$("#weather_card").hide()
 						$("#MainContainer").html(
->>>>>>> bc0a298ac044d921223ac443bdde9cbd4ac808f4
 						`<div id="traffic_card" class="card mb-3 " style="max-width: 540px;">
 							<div class="row no-gutters">
 								
@@ -295,41 +287,9 @@ $(document).ready(function() {
 								</div>
 							</div>
 						</div>`)
-<<<<<<< HEAD
-							n();
-							})
-					} else if(response.includes("Generating local weather")){
-						//problem being embedded script
-						$("#MainContainer")
-							.delay(4500)
-							.queue(function(n){
-								$(this)
-							.html(
-							`<div id="weather_card" class="collapse card mb-3 " style="max-width: 540px;">
-
-								<div class="row no-gutters">
-								
-								<div class="col-md-8">
-									<div class="card-body">
-									<h5 class="card-title">Local Weather</h5>
-									<script>
-								!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-								<a class="weatherwidget-io" href="https://forecast7.com/en/47d61n122d20/bellevue/?unit=us" data-label_1="BELLEVUE" data-label_2="WEATHER" data-theme="pure" >BELLEVUE WEATHER</a>
-								</script>
-									</div>
-								</div>
-								</div>
-								</div>`)
-								n();
-							})
-						
-						
-
-=======
 					} else if(response.includes("Generating weather map")){
 						$("#MainContainer").html("")
 						$("#weather_card").show()
->>>>>>> bc0a298ac044d921223ac443bdde9cbd4ac808f4
 					} else if(response.includes("Generating creator information")){
 						$("#weather_card").hide()
 						$("#MainContainer").html(
@@ -407,16 +367,8 @@ $(document).ready(function() {
 							'</div>'+
 						'</div>')
 					} else if(response.includes("Generating my information")){
-<<<<<<< HEAD
-						$("#MainContainer")
-						.delay(4500)
-						.queue(function(n){
-							$(this)
-						.html(
-=======
 						$("#weather_card").hide()
 						$("#MainContainer").html(
->>>>>>> bc0a298ac044d921223ac443bdde9cbd4ac808f4
 						'<div id="ares_card" class="collapse.show card mb-3 " style="max-width: 540px;">'+
 							'<div class="row no-gutters">'+
 							'<div class="col-md-4">'+
@@ -431,8 +383,8 @@ $(document).ready(function() {
 								'</div>'+
 							'</div>'+
 						'</div>')
-						n();
-						})
+						
+						
 					}
 					scrollToBottomOfResults();
 				},
