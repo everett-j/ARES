@@ -394,7 +394,8 @@ $(document).ready(function() {
 
 	//---------------------------------------- Ascii Spinner ---------------------------------------------------
 	function showSpinner() {
-		$('.spinner').show(3050, 'linear',  function() {hideSpinner()});
+		// $('.spinner').show(function() {hideSpinner()});
+		$('.spinner').show(800).delay(2300).hide(800);
 	}
 	function hideSpinner() {
 		$('.spinner').hide();
@@ -502,6 +503,7 @@ $(document).ready(function() {
 						
 </script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
   </body>
 </html>
 
