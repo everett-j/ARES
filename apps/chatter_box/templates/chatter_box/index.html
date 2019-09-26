@@ -51,23 +51,24 @@
 
       <div class="text-center hd1">
 				<!--BEGIN DYNAMIC DIV-->
-				
-               <!--ARES CARD-->
-               <div id="ares_card" class="collapse.show card mb-3 " style="max-width: 540px;">
-				<div class="row no-gutters">
-				  <div class="col-md-4">
-					  <img class="aresMain"src="{% static 'chatter_box/img/ares.png' %}" alt="ARES">
-				  </div>
-				  <div class="col-md-8">
-					<div class="card-body">
-					  <p class="large_text">A.R.E.S.</p>
-					  <p id='small_text' class="card-text small">A Rather Extraordinary System</p>
-					  <p id='small_text' class="card-text"><small class="text-muted">&#x1F5A4; born in Bellevue, WA</small></p>
-					</div>
-				  </div>
+				<div id="MainContainer">
+					<!--ARES CARD-->
+					<div id="ares_card" class="collapse.show card mb-3 " style="max-width: 540px;">
+					 <div class="row no-gutters">
+					   <div class="col-md-4">
+						   <img class="aresMain"src="{% static 'chatter_box/img/ares.png' %}" alt="ARES">
+					   </div>
+					   <div class="col-md-8">
+						 <div class="card-body">
+						   <p class="large_text">A.R.E.S.</p>
+						   <p id='small_text' class="card-text small">A Rather Extraordinary System</p>
+						   <p id='small_text' class="card-text"><small class="text-muted">&#x1F5A4; born in Bellevue, WA</small></p>
+						 </div>
+					   </div>
+					 </div>
+				   </div>
+				   <!--END ARES CARD-->
 				</div>
-			  </div>
-			  <!--END ARES CARD-->
 
 	<!--TESTING CARD-->
 	  <div id="test" class="collapse card mb-3 " style="max-width: 540px;">
@@ -300,18 +301,21 @@ $(document).ready(function() {
 				success: function (response){
 					var UserResponse = '<p class="botResult">'+response+'</p><div class="clearfix"></div>';
 					$(UserResponse).appendTo('#result_div');
+					console.log(response)
 					if(response.includes("Generating traffic map")){
 						$("#MainContainer").html(
-						`<div id="traffic_card" class="card mb-3 " style="max-width: 540px;">`+
-							`<div class="row no-gutters">`+
-								`<div class="col-md-8">`+
-								`<div class="card-body">`+
-									`<h5 class="card-title">Local Traffic</h5>`+
-									`<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d86096.20390980966!2d-122.1815943!3d47.5968427!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1569438509338!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>`+
-									`</div>`+
-								`</div>`+
-							`</div>`+
-						`</div>`)
+						`<div id="traffic_card" class="card mb-3 " style="max-width: 540px;">
+							<div class="row no-gutters">
+								
+								<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Local Traffic</h5>
+									
+									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60452.21297352237!2d-122.19358963230349!3d47.602446136980475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1569509736563!5m2!1sen!2sus" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+									</div>
+								</div>
+							</div>
+						</div>`)
 					} else if(response.includes("Generating local weather")){
 
 					} else if(response.includes("Generating creator information")){
