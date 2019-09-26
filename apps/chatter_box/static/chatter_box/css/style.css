@@ -39,6 +39,16 @@ a:focus {
   width: 200px;
 }
 
+#ares_card2 img{
+  width: 122px;
+
+}
+
+#shutdown_card img{
+  width: 966px;
+
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -401,6 +411,9 @@ mybot .suggestion span:last-child {
 .nav_img img{
   width: 35px;
 }
+.medium_text{
+  font-size: 22px;
+  font-weight: bold;
 
 
 @media screen and (max-width: 500px) {
