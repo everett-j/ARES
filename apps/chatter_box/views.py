@@ -32,9 +32,9 @@ def send_text(request, text):
     text = " ".join(text)
     response = chatbot.get_response(text)
     context={
-        "text":"test",
-        "response": response
+        "response": response,
     }
+
 
     print(response)
     return render(request, "chatter_box/chatterbot.html", context)
