@@ -457,13 +457,13 @@ mybot .suggestion span:last-child {
 
 .botResult {
   opacity: 0;
-  -moz-animation: cssAnimation s;
+  -moz-animation: cssAnimation 1.5s;
   /* Firefox */
-  -webkit-animation: cssAnimation s;
+  -webkit-animation: cssAnimation 1.5s;
   /* Safari and Chrome */
-  -o-animation: cssAnimation s;
+  -o-animation: cssAnimation 1.5s;
   /* Opera */
-  animation: cssAnimation s;
+  animation: cssAnimation 1.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
