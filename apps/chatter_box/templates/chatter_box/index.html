@@ -87,39 +87,8 @@
 		</div>
 	<!--END TESTING CARD-->
 
-	  <!--TIM CARD-->
-	  <div id="tim_card" class="collapse card mb-3 " style="max-width: 540px;">
-		  <div class="row no-gutters">
-			<div class="col-md-4">
-			  <img src="..." class="card-img" alt="...">
-			</div>
-			<div class="col-md-8">
-			  <div class="card-body">
-				<h5 class="card-title">Tim Rogers</h5>
-				<p id='small_text' class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-				<p id='smaller_text' class="card-text"><small class="text-muted">Bellevue, WA</small></p>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<!--END TIM CARD-->
 
 				<!--Josh R CARD-->
-	  <div id="josh_card" class="collapse card mb-3 " style="max-width: 540px;">
-		  <div class="row no-gutters">
-			<div class="col-md-4">
-			  <img src="..." class="card-img" alt="...">
-			</div>
-			<div class="col-md-8">
-			  <div class="card-body">
-				<h5 class="card-title">Josh Richardson</h5>
-				<p id='small_text' class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-				
-				<p id='smaller_text' class="card-text"><small class="text-muted">Greater Seattle Area, WA</small></p>
-			  </div>
-			</div>
-		  </div>
-		</div>
 		<!--END Josh R CARD-->
 
 		<!--Josh E CARD-->
@@ -159,7 +128,7 @@
 		<!--END Traffic CARD-->
 
 		<!--Weather CARD-->
-	  <div id="weather_card" class="collapse card mb-3 " style="max-width: 540px;">
+	  <div id="weather_card" class="card mb-3 " style="max-width: 540px;">
 		  <div class="row no-gutters">
 		   
 			<div class="col-md-8">
@@ -167,9 +136,9 @@
 				<h5 class="card-title">Local Weather</h5>
 				
 				<a class="weatherwidget-io" href="https://forecast7.com/en/47d61n122d20/bellevue/?unit=us" data-label_1="BELLEVUE" data-label_2="WEATHER" data-theme="pure" >BELLEVUE WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+				<script>
+				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+				</script>
 			  </div>
 			</div>
 		  </div>
@@ -198,6 +167,7 @@
     <!------------------------------------ BOT JS ------------------------------------>
 <script>
 $(document).ready(function() {
+	$("#weather_card").hide()
 
 
 	var stat = "{% static 'chatter_box/img/ares.png' %}"
@@ -303,6 +273,7 @@ $(document).ready(function() {
 					$(UserResponse).appendTo('#result_div');
 					console.log(response)
 					if(response.includes("Generating traffic map")){
+						$("#weather_card").hide()
 						$("#MainContainer").html(
 						`<div id="traffic_card" class="card mb-3 " style="max-width: 540px;">
 							<div class="row no-gutters">
@@ -310,21 +281,102 @@ $(document).ready(function() {
 								<div class="col-md-8">
 								<div class="card-body">
 									<h5 class="card-title">Local Traffic</h5>
+									<iframe src="https://embed.waze.com/iframe?zoom=12&lat=47.621438&lon=-122.208996&ct=livemap" width="500" height="500" allowfullscreen></iframe>
 									
-									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60452.21297352237!2d-122.19358963230349!3d47.602446136980475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1569509736563!5m2!1sen!2sus" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 									</div>
 								</div>
 							</div>
 						</div>`)
-					} else if(response.includes("Generating local weather")){
-
+					} else if(response.includes("Generating weather map")){
+						$("#MainContainer").html("")
+						$("#weather_card").show()
 					} else if(response.includes("Generating creator information")){
-						
-					} else if(response.includes("Generating Tim's information")){
+						$("#weather_card").hide()
+						$("#MainContainer").html(
+						'<div id="joshe_card" class="card mb-3 " style="max-width: 540px;">'+
+							'<div class="row no-gutters">'+
+								'<div class="col-md-4">'+
+									`<img src="{% static 'chatter_box/img/josh-everett.jpg' %}" class="card-img" alt="Josh Everett">`+
+								'</div>'+
+								'<div class="col-md-8">'+
+									'<div class="card-body">'+
+										'<h5 class="card-title">Josh Everett</h5>'+
+										'<p id="small_text" class="card-text small">Well-versed in Python, Angular, JavaScript, MongoDB, Django and MySQL. Military veteran with'+
+										'strong ability to manage projects from concept to completion ensuring on-time, on-budget, and on-'+
+										'target results. Equally adept at working with teams and individually with minimal supervision.</p>'+
+										'<p id="small_text" class="card-text"><a href="http://www.josheverett.info">JoshEverett.info</a></p>'+
+										'<p id="small_text" class="card-text"><small class="text-muted">Lexington Park, MD</small></p>'+
+									'</div>'+
+								'</div>'+
+							'</div>'+
+						'</div>'+
+						'<div id="josh_card" class="card mb-3 " style="max-width: 540px;">'+
+							'<div class="row no-gutters">'+
+								'<div class="col-md-4">'+
+									'<img src="..." class="card-img" alt="...">'+
+								'</div>'+
+								'<div class="col-md-8">'+
+									'<div class="card-body">'+
+										'<h5 class="card-title">Josh Richardson</h5>'+
+										'<p id="small_text" class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'+
+										'<p id="smaller_text" class="card-text"><small class="text-muted">Greater Seattle Area, WA</small></p>'+
+										'</div>'+
+								'</div>'+
+							'</div>'+
+						'</div>'+
+						'<div id="tim_card" class="card mb-3 " style="max-width: 540px;">'+
+							'<div class="row no-gutters">'+
+								'<div class="col-md-4">'+
+									'<img src="..." class="card-img" alt="...">'+
+								'</div>'+
+								'<div class="col-md-8">'+
+									'<div class="card-body">'+
+										'<h5 class="card-title">Tim Rogers</h5>'+
+										'<p id="small_text" class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'+
+										'<p id="smaller_text" class="card-text"><small class="text-muted">Bellevue, WA</small></p>'+
+									'</div>'+
+								'</div>'+
+							'</div>'+
+						'</div>'
+						)
+					} else if(response.includes("Generating Tim&#39;s information")){
+						$("#weather_card").hide()
+						$("#MainContainer").html(
+						'<div id="tim_card" class="card mb-3 " style="max-width: 540px;">'+
+							'<div class="row no-gutters">'+
+								'<div class="col-md-4">'+
+									'<img src="..." class="card-img" alt="...">'+
+								'</div>'+
+								'<div class="col-md-8">'+
+									'<div class="card-body">'+
+										'<h5 class="card-title">Tim Rogers</h5>'+
+										'<p id="small_text" class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'+
+										'<p id="smaller_text" class="card-text"><small class="text-muted">Bellevue, WA</small></p>'+
+									'</div>'+
+								'</div>'+
+							'</div>'+
+						'</div>')
 						
 					} else if(response.includes("Generating Josh R's information")){
+						$("#weather_card").hide()
+						$("#MainContainer").html(
+						'<div id="josh_card" class="card mb-3 " style="max-width: 540px;">'+
+							'<div class="row no-gutters">'+
+								'<div class="col-md-4">'+
+									'<img src="..." class="card-img" alt="...">'+
+								'</div>'+
+								'<div class="col-md-8">'+
+									'<div class="card-body">'+
+										'<h5 class="card-title">Josh Richardson</h5>'+
+										'<p id="small_text" class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'+
+										'<p id="smaller_text" class="card-text"><small class="text-muted">Greater Seattle Area, WA</small></p>'+
+										'</div>'+
+								'</div>'+
+							'</div>'+
+						'</div>')
 						
-					} else if(response.includes("Generating Josh")){
+					} else if(response.includes("Generating Josh&#39;s information")){
+						$("#weather_card").hide()
 						$("#MainContainer").html(
 						'<div id="joshe_card" class="card mb-3 " style="max-width: 540px;">'+
 							'<div class="row no-gutters">'+
@@ -344,6 +396,7 @@ $(document).ready(function() {
 							'</div>'+
 						'</div>')
 					} else if(response.includes("Generating my information")){
+						$("#weather_card").hide()
 						$("#MainContainer").html(
 						'<div id="ares_card" class="collapse.show card mb-3 " style="max-width: 540px;">'+
 							'<div class="row no-gutters">'+
