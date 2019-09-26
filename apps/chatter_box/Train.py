@@ -62,10 +62,10 @@ chb.train(["Weather.", "Generating weather map... What else can I do for you?"])
 chb.train(["weather", "Generating weather map... What else can I do for you?"])
 
 ########################    Creator information     ########################
-chb.train(["Who created you?", "Josh and Tim created me. Would you like their information?", "Yes.", "Generating creator information... What else can I do for you?"])
-chb.train(["who created you", "Josh and Tim created me. Would you like their information?", "yes", "Generating creator information... What else can I do for you?"])
-chb.train(["Who's your creator?", "Josh and Tim are. Would you like their information?", "Yes.", "Generating creator information... What else can I do for you?"])
-chb.train(["whos your creator", "Josh and Tim are. Would you like their information?", "Yes.", "Generating creator information... What else can I do for you?"])
+chb.train(["Who created you?", "Josh, Josh, and Tim created me. Would you like their information?", "Yes.", "Generating creator information... What else can I do for you?"])
+chb.train(["who created you", "Josh Josh, and Tim created me. Would you like their information?", "yes", "Generating creator information... What else can I do for you?"])
+chb.train(["Who's your creator?", "Josh, Josh, and Tim are. Would you like their information?", "Yes.", "Generating creator information... What else can I do for you?"])
+chb.train(["whos your creator", "Josh, Josh, and Tim are. Would you like their information?", "Yes.", "Generating creator information... What else can I do for you?"])
 chb.train(["Give me your creator information.", "Generating creator information... What else can I do for you?"])
 chb.train(["give me your creator information", "Generating creator information... What else can I do for you?"])
 chb.train(["Show me your creators.", "Generating creator information... What else can I do for you?"])
@@ -85,15 +85,25 @@ chb.train(["whos tim", "Generating Tim's information... What else can I do for y
 chb.train(["Tim.", "Generating Tim's information... What else can I do for you?"])
 chb.train(["tim", "Generating Tim's information... What else can I do for you?"])
 
-########################    Josh information        ########################
-chb.train(["Give me information on Josh.", "Generating Josh's information... What else can I do for you?"])
-chb.train(["give me information on josh", "Generating Josh's information... What else can I do for you?"])
-chb.train(["Show me Josh.", "Generating Josh's information... What else can I do for you?"])
-chb.train(["show me josh", "Generating Josh's information... What else can I do for you?"])
-chb.train(["Who's Josh?", "Generating Josh's information... What else can I do for you?"])
-chb.train(["whos josh", "Generating Josh's information... What else can I do for you?"])
-chb.train(["Josh.", "Generating Josh's information... What else can I do for you?"])
-chb.train(["josh", "Generating Josh's information... What else can I do for you?"])
+########################    Josh E information      ########################
+chb.train(["Give me information on Josh Everett.", "Generating Josh Everett's information... What else can I do for you?"])
+chb.train(["give me information on josh everett", "Generating Josh Everett's information... What else can I do for you?"])
+chb.train(["Show me Josh Everett.", "Generating Josh Everett's information... What else can I do for you?"])
+chb.train(["show me josh everett", "Generating Josh Everett's information... What else can I do for you?"])
+chb.train(["Who's Josh Everett?", "Generating Josh Everett's information... What else can I do for you?"])
+chb.train(["whos josh everett", "Generating Josh Everett's information... What else can I do for you?"])
+chb.train(["Josh Everett.", "Generating Josh Everett's information... What else can I do for you?"])
+chb.train(["josh everett", "Generating Josh Everett's information... What else can I do for you?"])
+
+########################    Josh R information      ########################
+chb.train(["Give me information on Josh Richardson.", "Generating Josh Richardson's information... What else can I do for you?"])
+chb.train(["give me information on josh richardson", "Generating Josh Richardson's information... What else can I do for you?"])
+chb.train(["Show me Josh Richardson.", "Generating Josh Richardson's information... What else can I do for you?"])
+chb.train(["show me josh richardson", "Generating Josh Richardson's information... What else can I do for you?"])
+chb.train(["Who's Josh Richardson?", "Generating Josh Richardson's information... What else can I do for you?"])
+chb.train(["whos josh richardson", "Generating Josh Richardson's information... What else can I do for you?"])
+chb.train(["Josh Richardson.", "Generating Josh Richardson's information... What else can I do for you?"])
+chb.train(["josh richardson", "Generating Josh Richardson's information... What else can I do for you?"])
 
 ########################    Bot information         ########################
 chb.train(["Give me information about yourself.", "Generating my information... What else can I do for you?"])
