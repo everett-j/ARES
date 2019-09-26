@@ -538,7 +538,31 @@ $(document).ready(function() {
 							'</div>'+
 						'</div>')
 						n();
-						})					
+						})	
+					} else if(response.includes("Generating George")){
+						$("#weather_card").hide()
+						$("#MainContainer")
+						.delay(3000)
+						.queue(function(n){
+								$(this)
+						.html(
+						'<div id="joshe_card" class="card mb-3 " style="max-width: 540px;">'+
+							'<div class="row no-gutters">'+
+								'<div class="col-md-4">'+
+								`<img src="{% static 'chatter_box/img/george.gif' %}" class="card-img" alt="George">`+
+								'</div>'+
+								'<div class="col-md-8">'+
+									'<div class="card-body">'+
+										'<h5 class="card-title">oh George...</h5>'+
+										'<p id="medium_text" class="card-text small">USERNAME: BALLA</p>'+
+										
+										
+									'</div>'+
+								'</div>'+
+							'</div>'+
+						'</div>')
+						n();
+						})				
 					}
 					scrollToBottomOfResults();
 				},
