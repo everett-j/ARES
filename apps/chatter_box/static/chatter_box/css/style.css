@@ -501,11 +501,7 @@ mybot .suggestion span:last-child {
   100%{ bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
 }
 
-#chat-input {
-  background: url({% static 'chatter_box/img/ai.gif' %}) no-repeat scroll 7px 7px;
-  padding-left:30px;
 
-}
 
 
 
