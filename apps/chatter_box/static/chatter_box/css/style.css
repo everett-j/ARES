@@ -470,8 +470,4 @@ mybot .suggestion span:last-child {
       opacity: 1;
   }
 }
-
-.aresMain {
-  transition: transform cubic-bezier(0.14, .58, .08, .92)
-}
 /* MyBot end */

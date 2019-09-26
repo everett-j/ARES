@@ -215,18 +215,18 @@ $(document).ready(function() {
 
 	// ------------------------------------------ Toggle chatbot -----------------------------------------------
 	$('.profile_div').click(function() {
-		$('.profile_div').toggle();
+		$('.profile_div').slideToggle();
 		$('.chatCont').toggle();
-		$('.bot_profile').toggle();
-		$('.chatForm').toggle();
+		$('.bot_profile').slideToggle();
+		$('.chatForm').slideToggle();
 		document.getElementById('chat-input').focus();
 	});
 
 	$('.close').click(function() {
 		$('.profile_div').toggle();
 		$('.chatCont').toggle();
-		$('.bot_profile').toggle();
-		$('.chatForm').toggle();
+		$('.bot_profile').slideToggle();
+		$('.chatForm').slideToggle();
 	});
 
 
@@ -274,9 +274,6 @@ $(document).ready(function() {
 				e.preventDefault();
 				return false;
 			} else {
-				// setTimeout( function() { $("chat-input").focus(); }, 500 );
-				// .focus('#chat-input')
-				// $("#chat-input").blur();
 				showSpinner();
 				document.getElementById("chat-input").focus();
 				setUserResponse(text);
@@ -426,81 +423,7 @@ $(document).ready(function() {
 		$('.suggestion').remove();
 	});
 	// Suggestions end -----------------------------------------------------------------------------------------
-});
-
-
-	// $(document).keypress(function(event){
-	// 	var keycode = (event.keyCode ? event.keyCode : event.which);
-	// 	if(keycode == '13'){
-	// 		console.log('pressed enter');
-	// 		function(){$.ajax({
-	// 			url: "chatterbot.html", success: function(result){
-	// 				$('#ajax').html(result);
-	// 			}
-				
-	// 		})
-	// 	}
-	// }})
-	// $(document).keypress(function(event){
-	// 	var keycode = (event.keyCode ? event.keycode : event.which);
-	// 	if(keycode == '13'){
-	// 		console.log('pressed enter');
-	// 		function test(){
-	// 			$.ajax({
-	// 				url: "chatterbot.html", success: function(result){
-	// 					$('#ajax').html(result);
-	// 				}
-	// 			})
-	// 		}
-	// 		test();
-	// 	}
-	// })
-
-	//  possible solution # 1
-	
-	// $(document).keypress(function(event){
-	// 	var keycode = (event.keycode ? event.keyCode : event.which);
-	// 	if(keycode == '13'){
-	// 		var chatInput = $("#chat-input").val()
-	// 		console.log('result of getElement is ', chatInput)
-	// 		console.log('pressed enter');
-	// 		$.ajax({
-	// 			url: 'send/'+chatInput,
-	// 			method: 'get',
-	// 			success: function (response){
-	// 				$('#ajax').html(response);
-	// 			},
-	// 			error: function(response){
-	// 				console.log('you are a failure')
-	// 				console.log(response)
-	// 			}
-	// 		})
-	// 	}
-	// })
-
-	// $.get('/send/'
-	
-	// const xhr = new XMLHttpRequest();
-	// const container = document.getElementById('#ajax');
-
-	// xhr.onload = function() {
-	// 	if (this.status === 200) {
-	// 		container.innerHTML = xhr.responseText;
-	// 	} else {
-	// 		console.warn('did not receive 200 ok from response!');
-	// 	}
-	// };
-	// xhr.open('get', 'chatterbot.html');
-	// xhr.send();
-
-	// $(document).keypress(function(event){
-	// 	var keycode = (event.keycode ? event.keyCode : event.which);
-	// 	if(keycode == '13'){
-	// 		console.log('presed enter');
-	// 		$("#ajax").load("apps/chatter_box/templates/chatter_box/chatterbot.html");
-	// 	}
-	// })
-						
+});		
 </script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
