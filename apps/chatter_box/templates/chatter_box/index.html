@@ -14,35 +14,8 @@
     <nav class="navbar navbar-dark bg-dark">
         <div class="nav_img">
             <img src="{% static 'chatter_box/img/ai2.gif' %}" alt="ARES"> <a class="navbar-brand" href="/">  (A.R.E.S.)</a>
-        </div>	
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-    
-      <!-- <div class="collapse navbar-collapse" id="navbarsExample01">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" id="traffic" data-toggle="collapse"  href="#traffic_card" aria-expanded="false" aria-controls="trafficcard">Local Traffic</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" id="weather" data-toggle="collapse"  href="#weather_card" aria-expanded="false" aria-controls="weather_card">Local Weather</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Creator Info</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-			  <a id="sky" data-toggle="collapse" class="dropdown-item" href="#test" aria-expanded="false" aria-controls="test">About Sky</a>
-              <a id="tim" data-toggle="collapse" class="dropdown-item" href="#tim_card" aria-expanded="false" aria-controls="tim_card">About Tim</a>
-			  <a id="joshe" data-toggle="collapse" class="dropdown-item" href="#joshe_card" aria-expanded="false" aria-controls="joshe_card">About Josh E</a>
-			  <a id="josh" data-toggle="collapse" class="dropdown-item" href="#josh_card" aria-expanded="false" aria-controls="josh_card">About Josh R</a>
-            </div>
-          </li>
-        </ul>
-        
-      </div> -->
+        </div>
+     
     </nav>
 <div id="shut"></div>
     <div class="container">
@@ -53,7 +26,7 @@
 				
 				<div id="MainContainer">
 					<!--ARES CARD-->
-					<div id="ares_card" class="collapse.show card mb-3 " style="max-width: 540px;">
+					<div id="ares_card" class="collapse.show card mb-3 " style="max-width: 850px;">
 					 <div class="row no-gutters">
 					   <div class="col-md-4">
 						   <img class="aresMain"src="{% static 'chatter_box/img/ai2.gif' %}" alt="ARES">
@@ -67,7 +40,7 @@
 					   </div>
 					 </div>
 				   </div>
-				   <div id="ares_card2" class="collapse.show card mb-3 " style="max-width: 540px;">
+				   <div id="ares_card2" class="collapse.show card mb-3 " style="max-width: 850px;">
 						<div class="row no-gutters">
 						   
 							<div class="card-body">
@@ -81,64 +54,7 @@
 					  </div>
 				   
 				</div>
-<!--END ARES CARD-->
 
-	<!--TESTING CARD-->
-	  <!-- <div id="test" class="collapse card mb-3 " style="max-width: 540px;">
-		  <div class="row no-gutters">
-			<div class="col-md-4">
-				<img src="{% static 'chatter_box/img/sky.jpg' %}" class="card-img" alt="Josh Everett">
-			</div>
-			<div class="col-md-8">
-			  <div class="card-body">
-				<h5 class="card-title">TESTING CARD</h5>
-				<p id='small_text' class="card-text small">Artificial neural network-based conscious group mind and artificial general intelligence system.</p>
-				<p id='smaller_text' class="card-text"><small class="text-muted">Bellevue, WA</small></p>
-			  </div>
-			</div>
-		  </div>
-		</div> -->
-	<!--END TESTING CARD-->
-
-
-				<!--Josh R CARD-->
-		<!--END Josh R CARD-->
-
-		<!--Josh E CARD-->
-		<!-- <div id="joshe_card" class="collapse card mb-3 " style="max-width: 540px;">
-		  <div class="row no-gutters">
-			<div class="col-md-4">
-			  
-			  <img src="{% static 'chatter_box/img/josh-everett.jpg' %}" class="card-img" alt="Josh Everett">
-			</div>
-			<div class="col-md-8">
-			  <div class="card-body">
-				<h5 class="card-title">Josh Everett</h5>
-				<p id='small_text' class="card-text small">Well-versed in Python, Angular, JavaScript, MongoDB, Django and MySQL. Military veteran with
-				  strong ability to manage projects from concept to completion ensuring on-time, on-budget, and on-
-				  target results. Equally adept at working with teams and individually with minimal supervision.</p>
-				<p id='small_text' class="card-text"><a href="http://www.josheverett.info">JoshEverett.info</a></p>
-				<p id='small_text' class="card-text"><small class="text-muted">Lexington Park, MD</small></p>
-			  </div>
-			</div>
-		  </div>
-		</div> -->
-		<!--END Josh E CARD-->
-		
-		<!--Traffic CARD-->
-	  <!-- <div id="traffic_card" class="collapse card mb-3 " style="max-width: 540px;">
-		  <div class="row no-gutters">
-			
-			<div class="col-md-8">
-			  <div class="card-body">
-				<h5 class="card-title">Local Traffic</h5>
-				
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60452.21297352237!2d-122.19358963230349!3d47.602446136980475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1569509736563!5m2!1sen!2sus" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-				  </div>
-			</div>
-		  </div>
-		</div> -->
-		<!--END Traffic CARD-->
 
 		<!--Weather CARD-->
 	  <div id="weather_card" class="card mb-3 " style="max-width: 750px;">
@@ -282,11 +198,11 @@ $(document).ready(function() {
 					$(UserResponse).appendTo('#result_div');
 					console.log(response)
 					if(response.includes("Generating traffic map")){
-						$("#weather_card").hide()
 						$("#MainContainer")
 						.delay(3000)
 						.queue(function(n){
 						$("#shut").html("")
+						$("#weather_card").hide()
 							$(this)
 						.html(
 						`<div id="traffic_card" class="card mb-3 " style="max-width: 850px;">
@@ -379,7 +295,7 @@ $(document).ready(function() {
 						$("#shut").html("")
 								$(this)
 						.html(
-						'<div id="tim_card" class="card mb-3 " style="max-width: 540px;">'+
+						'<div id="tim_card" class="card mb-3 " style="max-width: 850px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="col-md-4">'+
 										`<img src="{% static 'chatter_box/img/tim.jpg' %}" class="card-img" alt="Tim Rogers">`+
@@ -404,7 +320,7 @@ $(document).ready(function() {
 						$("#shut").html("")
 								$(this)
 							.html(
-						'<div id="josh_card" class="card mb-3 " style="max-width: 540px;">'+
+						'<div id="josh_card" class="card mb-3 " style="max-width: 850px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="col-md-4">'+
 										`<img src="{% static 'chatter_box/img/josh-richardson.jpg' %}" class="card-img" alt="Josh Richardson">`+
@@ -428,7 +344,7 @@ $(document).ready(function() {
 						$("#shut").html("")
 								$(this)
 						.html(
-						'<div id="joshe_card" class="card mb-3 " style="max-width: 540px;">'+
+						'<div id="joshe_card" class="card mb-3 " style="max-width: 850px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="col-md-4">'+
 								`<img src="{% static 'chatter_box/img/josh-everett.jpg' %}" class="card-img" alt="Josh Everett">`+
@@ -455,7 +371,7 @@ $(document).ready(function() {
 						$("#shut").html("")
 								$(this)
 						.html(
-						'<div id="ares_card" class="collapse.show card mb-3 " style="max-width: 540px;">'+
+						'<div id="ares_card" class="collapse.show card mb-3 " style="max-width: 850px;">'+
 							'<div class="row no-gutters">'+
 							'<div class="col-md-4">'+
 								`<img class="aresMain"src="{% static 'chatter_box/img/ai2.gif'%}" alt="ARES">`+
@@ -488,7 +404,7 @@ $(document).ready(function() {
 						$("#shut").html("")
 								$(this)
 						.html(
-						'<div id="joshe_card" class="card mb-3 " style="max-width: 540px;">'+
+						'<div id="joshe_card" class="card mb-3 " style="max-width: 850px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="col-md-4">'+
 								`<img src="{% static 'chatter_box/img/sam-wade.jpeg' %}" class="card-img" alt="Sam Wade">`+
@@ -541,7 +457,7 @@ $(document).ready(function() {
 						$("#shut").html("")
 								$(this)
 						.html(
-						'<div class="card mb-3 " style="max-width: 540px;">'+
+						'<div class="card mb-3 " style="max-width: 850px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="d-inline-block">'+
 									`<img src="{% static 'chatter_box/img/george3.gif' %}" class="card-img" alt="George" style="border-radius:100px;height:200px;width:250px;">`+
@@ -603,13 +519,7 @@ $(document).ready(function() {
 			}
 		}
 		switch(action) {
-			// case 'your.action': // set in api.ai
-			// Perform operation/json api call based on action
-			// Also check if (incomplete = false) if there are many required parameters in an intent
-			// if(suggestions) { // check if quick replies are there in api.ai
-			//   addSuggestion(suggestions);
-			// }
-			// break;
+
 			default:
 				setBotResponse(speech);
 				if(suggestions) { // check if quick replies are there in api.ai
