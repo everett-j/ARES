@@ -4,6 +4,8 @@ from django.contrib import messages
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer, ListTrainer
 from django.http import JsonResponse
+import win32com.client as wincl
+import pythoncom
 # from json_response import JsonResponse
 
 
@@ -24,6 +26,7 @@ def chatter(request):
 
 
 def send_text(request, text):
+    pythoncom.CoInitialize()
     chatbot = ChatBot('Ares', trainer='chatterbot.trainers.ListTrainer')
     # response = chatbot.get_response("Bot info.")
     # print(response)
@@ -33,7 +36,7 @@ def send_text(request, text):
     context={
         "response": response,
     }
-
-
+    speak = wincl.Dispatch("SAPI.SpVoice")
+    speak.Speak(response)
     print(response)
     return render(request, "chatter_box/chatterbot.html", context)
