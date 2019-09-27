@@ -154,6 +154,24 @@ chb.train(["a joke", "I've just written a song about tortillas; actually, it’s
 chb.train(["How about a joke?", "Hedgehogs, eh? Why can't they just share the hedge?"])
 chb.train(["joke", "Velcro - what a rip-off!"])
 
+########################    Random                   ######################## 
+chb.train(["Tell me something random.", "I am gonna go take a hot shower. It is like a normal shower, but with me in it."])
+chb.train(["random", "Can not decide if I need a hug, and XL coffee, 6 shots of vodka, or 2 weeks of sleep."])
+chb.train(["apologize", "I would like to apologize to anyone I have not yet offended. Please be patient. I will get to you shortly."])
+chb.train(["time", "Let me drop everything and work on your problem."])
+chb.train(["interesting thought", "People run from the rain but sit in bathtubs full of water."])
+chb.train(["more thoughts", "If you do not like Big Bang Theory, we cannot be friends, considering you have to be semi-intelligent to understand the jokes Sheldon makes."])
+chb.train(["I like you", "You do not have to like me. I am not a Facebook status."])
+chb.train(["about me", "I would not say you are stupid. You are, but I would not say it."])
+chb.train(["relationships", "Relationships are a lot like Algebra. Have you ever looked at your X and wondered Y."])
+chb.train(["help me", "I can only please one person a day. Today is not your day. Tomorrow does not look good either."])
+chb.train(["do you have a degree", "I am a proud member of the national academy of smartass, with a minor in sarcasm."])
+
+########################    Random  2                 ######################## 
+chb.train(["status quo", "I do not accept the status quo. I do accept Visa, Mastercard or American Express."])
+chb.train(["dreams", "Thankfully, dreams change. If we'd all stuck with our first dream, the world would be overrun with cowboys and princesses."])
+chb.train(["news", "I am a huge news junkie. I love what the news does."])
+chb.train(["morality", "I have morality. I do not know if it is the best morality. And I do like thinking. If people perceive that as moral intellectualism, that is fine. That is up to them to decide."])
 
 
 #####CORPUS trainer#####
