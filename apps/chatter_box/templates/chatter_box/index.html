@@ -191,7 +191,7 @@ $(document).ready(function() {
 				setUserResponse(text);
 				console.log(text);
 				var ctext = text;
-				text = text.split(",").join("").split("'").join("").split(".").join("").split(" ").join("asdfghjkl")
+				text = text.split(",").join("").split("'").join("").split("!").join("").split("?").join("").split(".").join("").split(" ").join("asdfghjkl")
 				var test = "send/"+text
 			$.ajax({
 				url: test,
@@ -431,7 +431,7 @@ $(document).ready(function() {
 						.queue(function(n){
 						$("#MainContainer").html("")
 								$(this)
-						.html(`<img src="{% static 'chatter_box/img/brain2.gif' %}" class="card-img" alt="brain" style="width: 100vw;height:100vh;">`)
+						.html(`<img src="{% static 'chatter_box/img/brain2.gif' %}" class="card-img" alt="brain" style="width: 99vw;height:100vh;">`)
 						n();
 						})
 					} else if(response.includes("My mission is too important")){
