@@ -201,11 +201,11 @@ $(document).ready(function() {
 					$(UserResponse).appendTo('#result_div');
 					console.log(response)
 					if(response.includes("Generating traffic map")){
-						$("#weather_card").hide()
 						$("#MainContainer")
 						.delay(3000)
 						.queue(function(n){
 						$("#shut").html("")
+						$("#weather_card").hide()
 							$(this)
 						.html(
 						`<div id="traffic_card" class="card mb-3 " style="max-width: 850px;">
