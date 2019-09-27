@@ -144,19 +144,15 @@
 		<!--END Traffic CARD-->
 
 		<!--Weather CARD-->
-	  <div id="weather_card" class="card mb-3 " style="max-width: 540px;">
+	  <div id="weather_card" class="card mb-3 " style="max-width: 750px;">
 		  <div class="row no-gutters">
 		   
-			<div class="col-md-8">
-			  <div class="card-body">
+			
+			  
 				<h5 class="card-title">Local Weather</h5>
-				
-				<a class="weatherwidget-io" href="https://forecast7.com/en/47d61n122d20/bellevue/?unit=us" data-label_1="BELLEVUE" data-label_2="WEATHER" data-theme="pure" >BELLEVUE WEATHER</a>
-				<script>
-				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-				</script>
-			  </div>
-			</div>
+				<script type='text/javascript' src='https://darksky.net/widget/default/47.6098,-122.1707/us12/en.js?width=100%&height=350&title=Bellevue, WA&textColor=333333&bgColor=FFFFFF&transparency=false&skyColor=undefined&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=333333&displaySum=yes&displayHeader=yes'></script>
+			
+			
 		  </div>
 		</div>
 		<!--END Weather CARD-->
@@ -296,12 +292,12 @@ $(document).ready(function() {
 						$("#shut").html("")
 							$(this)
 						.html(
-						`<div id="traffic_card" class="card mb-3 " style="max-width: 540px;">
+						`<div id="traffic_card" class="card mb-3 " style="max-width: 850px;">
 							<div class="row no-gutters">
 								<div class="col-md-8">
 								<div class="card-body">
 									<h5 class="card-title">Local Traffic</h5>
-									<iframe src="https://embed.waze.com/iframe?zoom=12&lat=47.621438&lon=-122.208996&ct=livemap" width="500" height="500" allowfullscreen></iframe>
+									<iframe src="https://embed.waze.com/iframe?zoom=12&lat=47.621438&lon=-122.208996&ct=livemap" width="800" height="800" allowfullscreen></iframe>
 									
 									</div>
 								</div>
@@ -329,7 +325,7 @@ $(document).ready(function() {
 						$("#shut").html("")
 								$(this)
 								.html(
-						'<div id="joshe_card" class="card mb-3 " style="max-width: 540px;">'+
+						'<div id="joshe_card" class="card mb-3 " style="max-width: 850px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="col-md-4">'+
 									`<img src="{% static 'chatter_box/img/josh-everett.jpg' %}" class="card-img" alt="Josh Everett">`+
@@ -346,7 +342,7 @@ $(document).ready(function() {
 								'</div>'+
 							'</div>'+
 						'</div>'+
-						'<div id="josh_card" class="card mb-3 " style="max-width: 540px;">'+
+						'<div id="josh_card" class="card mb-3 " style="max-width: 850px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="col-md-4">'+
 										`<img src="{% static 'chatter_box/img/josh-richardson.jpg' %}" class="card-img" alt="Josh Richardson">`+
@@ -360,7 +356,7 @@ $(document).ready(function() {
 								'</div>'+
 							'</div>'+
 						'</div>'+
-						'<div id="tim_card" class="card mb-3 " style="max-width: 540px;">'+
+						'<div id="tim_card" class="card mb-3 " style="max-width: 850px;">'+
 							'<div class="row no-gutters">'+
 								'<div class="col-md-4">'+
 										`<img src="{% static 'chatter_box/img/tim.jpg' %}" class="card-img" alt="Tim Rogers">`+
