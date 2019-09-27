@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOWED_HOSTS	../ARES/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+AUTH_PASSWORD_VALIDATORS	../ARES/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:88
+BASE_DIR	../ARES/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+ChatterBoxConfig	../apps/chatter_box/apps.py	/^class ChatterBoxConfig(AppConfig):$/;"	kind:class	line:4
+DATABASES	../ARES/settings.py	/^DATABASES = {$/;"	kind:variable	line:77
+DEBUG	../ARES/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+INSTALLED_APPS	../ARES/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
+LANGUAGE_CODE	../ARES/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:107
+MIDDLEWARE	../ARES/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:43
+ROOT_URLCONF	../ARES/settings.py	/^ROOT_URLCONF = 'ARES.urls'$/;"	kind:variable	line:53
+SECRET_KEY	../ARES/settings.py	/^SECRET_KEY = '&n+xsd*f6t2sgserlv1b9l@5t8q5l1)gs%)2^s3xu3)poqewlo'$/;"	kind:variable	line:23
+STATIC_URL	../ARES/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:121
+TEMPLATES	../ARES/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:55
+TIME_ZONE	../ARES/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:109
+Train.py	../Train.py	1;"	kind:file	line:1
+USE_I18N	../ARES/settings.py	/^USE_I18N = True$/;"	kind:variable	line:111
+USE_L10N	../ARES/settings.py	/^USE_L10N = True$/;"	kind:variable	line:113
+USE_TZ	../ARES/settings.py	/^USE_TZ = True$/;"	kind:variable	line:115
+WSGI_APPLICATION	../ARES/settings.py	/^WSGI_APPLICATION = 'ARES.wsgi.application'$/;"	kind:variable	line:71
+__init__.py	../ARES/__init__.py	1;"	kind:file	line:1
+__init__.py	../apps/chatter_box/__init__.py	1;"	kind:file	line:1
+__init__.py	../apps/chatter_box/migrations/__init__.py	1;"	kind:file	line:1
+admin.py	../apps/chatter_box/admin.py	1;"	kind:file	line:1
+application	../ARES/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../apps/chatter_box/apps.py	1;"	kind:file	line:1
+cb	../Train.py	/^cb = ChatBot('Ares')$/;"	kind:variable	line:5
+chatter	../apps/chatter_box/views.py	/^def chatter(request):$/;"	kind:function	line:15
+chb	../Train.py	/^chb = ListTrainer(cb)$/;"	kind:variable	line:6
+index	../apps/chatter_box/views.py	/^def index(request):$/;"	kind:function	line:11
+manage.py	../manage.py	1;"	kind:file	line:1
+models.py	../apps/chatter_box/models.py	1;"	kind:file	line:1
+name	../apps/chatter_box/apps.py	/^    name = 'chatter_box'$/;"	kind:variable	line:5
+send_text	../apps/chatter_box/views.py	/^def send_text(request, text):$/;"	kind:function	line:26
+settings.py	../ARES/settings.py	1;"	kind:file	line:1
+tests.py	../apps/chatter_box/tests.py	1;"	kind:file	line:1
+urlpatterns	../ARES/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urlpatterns	../apps/chatter_box/urls.py	/^urlpatterns = [$/;"	kind:variable	line:4
+urls.py	../ARES/urls.py	1;"	kind:file	line:1
+urls.py	../apps/chatter_box/urls.py	1;"	kind:file	line:1
+views.py	../apps/chatter_box/views.py	1;"	kind:file	line:1
+wsgi.py	../ARES/wsgi.py	1;"	kind:file	line:1
