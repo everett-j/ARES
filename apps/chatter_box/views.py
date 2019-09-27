@@ -4,7 +4,6 @@ from django.contrib import messages
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer, ListTrainer
 from django.http import JsonResponse
-# from json_response import JsonResponse
 
 
     
@@ -25,8 +24,6 @@ def chatter(request):
 
 def send_text(request, text):
     chatbot = ChatBot('Ares', trainer='chatterbot.trainers.ListTrainer')
-    # response = chatbot.get_response("Bot info.")
-    # print(response)
     text = text.split("asdfghjkl")
     text = " ".join(text)
     response = chatbot.get_response(text)

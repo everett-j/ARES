@@ -312,7 +312,6 @@ $(document).ready(function() {
 						n();
 						})
 					} else if(response.includes("Generating Josh Richardson")){
-
 						$("#weather_card").hide()
 						$("#MainContainer")
 							.delay(3000)
@@ -395,7 +394,6 @@ $(document).ready(function() {
 						'</div>')
 						n();
 						})
-
 					} else if(response.includes("Generating BFF information")){
 						$("#weather_card").hide()
 						$("#MainContainer")
@@ -485,7 +483,6 @@ $(document).ready(function() {
 				e.preventDefault();
 				return false;
 			}
-			
 		}
 	});
 	//------------------------------------------- Send request to API.AI ---------------------------------------
@@ -519,7 +516,6 @@ $(document).ready(function() {
 			}
 		}
 		switch(action) {
-
 			default:
 				setBotResponse(speech);
 				if(suggestions) { // check if quick replies are there in api.ai
@@ -563,7 +559,6 @@ $(document).ready(function() {
 		// $('.spinner').show(function() {hideSpinner()});
 		$('.spinner').show(50).delay(975).hide(500);
 	}
-
 	//------------------------------------------- Suggestions --------------------------------------------------
 	function addSuggestion(textToAdd) {
 		setTimeout(function() {
